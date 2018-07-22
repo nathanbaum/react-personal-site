@@ -22,6 +22,8 @@ class Feed extends Component {
 
     const githubFeedAdditions = [];
     let headers = new Headers();
+    //don't worry, this personal access token only has read priviledges on public data, and is used only to get around rate-limiting
+    headers.append('Authorization', 'Basic '+btoa('nathanbaum:321caf66f0671bbf4f1d85bd382bdd3ca5faf521'));
     fetch(
       "https://api.github.com/users/nathanbaum/events/public",
       {
@@ -71,7 +73,7 @@ class Feed extends Component {
       });
     })
     .catch(function(error) {
-      alert('Something went wrong while trying to fetch my github data, sorry :/\nAnyway, here\'s the error: ' + error);
+      alert("Something went wrong while requesting my github data!")
     });
 
   }
