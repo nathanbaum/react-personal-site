@@ -5,31 +5,31 @@ const projects = [
   {
     name: 'Dissenter',
     link: 'https://dissenter.baumish.com',
-    thumbnail: '/img/project/Dissenter.png',
+    thumbnail: require('../img/project/Dissenter.png'),
     description: 'A reddit-like web application built using MongoDB, Express, and Handlebars',
   },
   {
     name: 'Pallite',
     link: 'http://baumish.com/projects/pallite/picker',
-    thumbnail: '/img/project/Pallite.png',
+    thumbnail: require('../img/project/Pallite.png'),
     description: 'A lite pallate picking utility with functionality for creasing hue-based swatches.',
   },
   {
     name: 'My-Markov',
     link: 'https://github.com/nathanbaum/my-markov',
-    thumbnail: '/img/project/Markov.png',
+    thumbnail: require('../img/project/Markov.png'),
     description: 'A simple command-line Markov chain generator built in C++.',
   },
   {
     name: 'Complexity_Viz',
     link: 'https://nathanbaum.github.io/complexity_vis',
-    thumbnail: '/img/project/Complexity_Vis.png',
+    thumbnail: require('../img/project/Complexity_Vis.png'),
     description: 'A client side web utility that can visualize the real-world time complexity of an algorithm by timing it at increasing values of n and graphing the results.',
   },
   {
     name: 'Computer Graphics',
     link: 'http://baumish.com/projects/graphics.html',
-    thumbnail: '/img/project/Graphics.png',
+    thumbnail: require('../img/project/Graphics.png'),
     description: 'The assignments page for Computer Graphics, taught by Ken Perlin (inventor of Perlin Noise function)',
   },
 ];

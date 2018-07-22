@@ -9,6 +9,14 @@ import { HighlightIcon } from './components/HighlightIcon';
 import { Projects } from './components/Projects';
 import './css/App.css';
 
+const face = require("./img/money-shot.JPG");
+const githubBlack = require("./img/icon/github.svg");
+const githubHighlight = require("./img/icon/github-purple.svg");
+const linkedinBlack = require("./img/icon/linkedin.svg");
+const linkedinHighlight = require("./img/icon/linkedin-blue.svg");
+const atBlack = require("./img/icon/at.svg");
+const atHighlight = require("./img/icon/at-yellow.svg");
+
 class App extends Component {
   constructor( props ) {
     super( props );
@@ -23,7 +31,7 @@ class App extends Component {
       <div className="App">
         <div id="headerWrapper">
           <div id="header">
-            <div className="Face Wrapper"><img id="face" src="/img/money-shot.JPG"/></div>
+            <div className="Face Wrapper"><img id="face" src={face}/></div>
             <p id="name">Nathan Baum</p>
             <div id="iconBar">
               <FeedIcon onClick={ () => {
@@ -50,9 +58,9 @@ class App extends Component {
         <Carousel ref={this.contentCarousel}>
           <Feed/>
           <div id="contactIcons">
-            <HighlightIcon link="https://github.com/nathanbaum" black="/img/icon/github.svg" highlight="/img/icon/github-purple.svg"/>
-            <HighlightIcon link="https://www.linkedin.com/in/nathaniel-baum/" black="/img/icon/linkedin.svg" highlight="/img/icon/linkedin-blue.svg"/>
-            <HighlightIcon link="mailto:nathan.baum@nyu.edu" black="/img/icon/at.svg" highlight="/img/icon/at-yellow.svg"/>
+            <HighlightIcon link="https://github.com/nathanbaum" black={githubBlack} highlight={githubHighlight}/>
+            <HighlightIcon link="https://www.linkedin.com/in/nathaniel-baum/" black={linkedinBlack} highlight={linkedinHighlight}/>
+            <HighlightIcon link="mailto:nathan.baum@nyu.edu" black={atBlack} highlight={atHighlight}/>
           </div>
           <Projects/>
         </Carousel>
