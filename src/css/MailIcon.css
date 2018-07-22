@@ -1,0 +1,65 @@
+
+.MailIcon {
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 2px;
+  transition: .3s;
+}
+
+.MailIcon.Container {
+  width: 70px;
+  height: 45px;
+  display: grid;
+  grid-template-columns: 23px 46px;
+}
+
+.MailIcon.Container:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: #fff8e8;
+}
+
+.MailIcon.Container:hover .MailIcon.Text {
+  color: #ff6b6b;
+}
+
+.MailIcon.Container:hover .MailIcon#stampOuter {
+  background-color: #1f65a3
+}
+
+.MailIcon.Container:hover .MailIcon#stampInner {
+  background-color: #aad7ff
+}
+
+.MailIcon.Text {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-decoration-style: wavy;
+  text-decoration-line: underline;
+  border-width: 0px;
+  margin: 0;
+  height: 0;
+}
+
+.MailIcon.Text#firstText {
+  transform: translateY(-8px) scale(1.5);
+}
+
+.MailIcon.Text#secondText {
+  transform: scale(1.5) translateY(-22px) translateX(-3px);
+}
+
+.MailIcon#stampOuter {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 16.5px;
+  height: 16.5px;
+  margin: 5px;
+}
+
+.MailIcon#stampInner {
+  width: 10px;
+  height: 10px;
+  margin: 2px;
+}

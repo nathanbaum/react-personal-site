@@ -1,0 +1,36 @@
+.HighlightIcon {
+  transition: .3s;
+}
+
+.HighlightIcon.Image {
+  width: 140px;
+}
+
+.HighlightIcon.Anchor {
+  height: 140px;
+  width: 140px;
+}
+
+.HighlightIcon.Container {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  margin: 20px;
+}
+
+.HighlightIcon.Image.Purple {
+  //top: 0;
+  left: 0;
+  //bottom: 0;
+  //right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.HighlightIcon.Image.Black:hover {
+  opacity: 0;
+}
+
+.HighlightIcon.Container:hover {
+  transform: scale(1.1);
+}

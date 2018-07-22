@@ -1,0 +1,31 @@
+.Feed {
+  transition: .3s;
+}
+
+.Feed.ContentWindow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vw;
+}
+
+.Feed.PostFlow {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.Feed.PostFlow .Right {
+  transform: translateX(-3.33px);
+}
+
+.Feed.PostFlow .left {
+  transform: translateX(3.33px);
+}
+
+@media only screen and (min-width: 800px) {
+  .Feed.PostFlow {
+    width: 800px;
+  }
+}

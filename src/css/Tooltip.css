@@ -1,0 +1,32 @@
+
+.Tooltip.Wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.Tooltip.Headline {
+  margin-left: 6vw;
+  font-weight: bold;
+  font-size: 5vw;
+}
+
+.Tooltip.Description {
+  margin-left: 10vw;
+  font-size: 3vw;
+  margin-right: 6vw;
+}
+
+@media only screen and (min-width: 800px) {
+  .Tooltip.Headline {
+    margin-left: 48px;
+    font-size: 40px;
+  }
+
+  .Tooltip.Description {
+    margin-left: 80px;
+    font-size: 24px;
+    margin-right: 48px;
+  }
+}
