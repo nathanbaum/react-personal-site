@@ -73,7 +73,7 @@ class Feed extends Component {
       });
     })
     .catch(function(error) {
-      alert("Something went wrong while requesting my github data!")
+      alert("Something went wrong while requesting my github data!");
     });
 
   }
