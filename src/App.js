@@ -127,11 +127,14 @@ class App extends Component {
 
     return (
       <div className="App">
-        <p id="name">{this.state.message}</p>
+        <p id="name">
+          {this.state.message}
+          <span style={{ color: 'white' }}>│</span>
+        </p>
         <div id="contactIcons">
           <HighlightIcon link="https://github.com/nathanbaum" black={githubBlack} highlight={githubHighlight}/>
           <HighlightIcon link="https://www.linkedin.com/in/nathaniel-baum/" black={linkedinBlack} highlight={linkedinHighlight}/>
-          <HighlightIcon link="mailto:nathan.baum@nyu.edu" black={atBlack} highlight={atHighlight}/>
+          <HighlightIcon link="mailto:nathanlbaum@gmail.com" black={atBlack} highlight={atHighlight}/>
         </div>
       </div>
     );
